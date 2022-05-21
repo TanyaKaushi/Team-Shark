@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: items
-        image: tanyagangegedara/item-microservice
+        image: 812970394215.dkr.ecr.us-west-2.amazonaws.com/items-repo
         ports:
         - containerPort: 5001
 
