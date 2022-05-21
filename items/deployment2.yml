@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: items-deployment
+  labels:
+    app: item
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: item
+  template:
+    metadata:
+      labels:
+        app: item
+    spec:
+      containers:
+      - name: items
+        image: tanyagangegedara/item-microservice
+        ports:
+        - containerPort: 5001
+
+        
