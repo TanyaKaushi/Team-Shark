@@ -15,7 +15,7 @@ spec:
         app: item
     spec:
       containers:
-      - name: items
+      - name: itemserver
         image: 812970394215.dkr.ecr.us-west-2.amazonaws.com/items-repo
         ports:
         - containerPort: 5001
